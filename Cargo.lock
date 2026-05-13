@@ -1099,6 +1099,7 @@ dependencies = [
  "opentelemetry",
  "parquet",
  "reqwest",
+ "rmcp",
  "serde",
  "serde_json",
  "strsim",
