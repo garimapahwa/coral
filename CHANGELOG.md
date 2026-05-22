@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.3.1](https://github.com/withcoral/coral/compare/v0.3.0...v0.3.1) (2026-05-22)
+
+
+### Features
+
+* **mcp:** add MCP-backed source support ([#402](https://github.com/withcoral/coral/issues/402)) ([a7f167f](https://github.com/withcoral/coral/commit/a7f167fca549cbc59f38560316f0ca293a5da580))
+
+
+### Bug Fixes
+
+* **ci:** invoke Windows release smoke binary correctly ([#688](https://github.com/withcoral/coral/issues/688)) ([f67a494](https://github.com/withcoral/coral/commit/f67a494aec40787d28d6d911049350a28da59254))
+
 ## [0.3.0](https://github.com/withcoral/coral/compare/v0.2.1...v0.3.0) (2026-05-22)
 
 
