@@ -268,7 +268,11 @@ jobs:
 
       # Dispatch the tap workflow after publishing the release:
       # https://octokit.github.io/rest.js/v22/#repos-create-dispatch-event
+      # Fresh releases only become installable when promotion flips them out of
+      # prerelease. Manual rebuilds can replace release assets and checksums for
+      # an already-promoted tag, so keep notifying the tap on workflow_dispatch.
       - name: Trigger Homebrew tap bump
+        if: steps.promote-release.outputs.was_prerelease == 'true' || github.event_name == 'workflow_dispatch'
         uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8
         env:
           RELEASE_VERSION: ${{ env.TAG_NAME }}
