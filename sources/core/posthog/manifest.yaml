@@ -16,9 +16,10 @@ inputs:
       self-hosted URL.
   POSTHOG_API_KEY:
     kind: secret
+    required: true
     hint: |
-      Create a personal API key and select only the read scopes for
-      the resources you plan to query.
+      REQUIRED. Create a personal API key and select only the read
+      scopes for the resources you plan to query.
       See [PostHog API docs](https://posthog.com/docs/api).
 base_url: "{{input.POSTHOG_API_BASE}}"
 auth:
