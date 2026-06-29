@@ -4,11 +4,13 @@
   "include-component-in-tag": false,
   "bump-minor-pre-major": true,
   "bump-patch-for-minor-pre-major": true,
+  "prerelease": true,
   "changelog-path": "CHANGELOG.md",
   "packages": {
     ".": {
       "package-name": "coral",
-      "extra-files": ["Cargo.toml"]
+      "extra-files": ["Cargo.toml"],
+      "exclude-paths": ["sources/community", "sources/core-v4"]
     }
   },
   "bootstrap-sha": "51de7ec4e927d627e02ada30d258921eb258d8e8"
